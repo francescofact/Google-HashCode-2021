@@ -74,11 +74,14 @@ def compute_semaphores(intersections: list):
 
 
 if __name__ == '__main__':
-    in_filenames = ["a.txt", "b.txt", "c.txt", "d.txt", "e.txt", "f.txt"]
+    in_dir_name = "input_datasets/"
+    out_dir_name = "outputs/"
+    files_names = ["a.txt", "b.txt", "c.txt", "d.txt", "e.txt", "f.txt"]
+    in_filenames = [in_dir_name + files_names[i] for i in range(len(files_names))]
     for fn in in_filenames:
         num_intersections, sim_duration, streets, paths = parsing.readfile(fn)
         inter123 = get_intersections_traffic(num_intersections)
         inter_start = get_intersections_traffic_start(num_intersections)
         semaphores = compute_semaphores(inter123)
-        out_fn = fn[0] + "_out.txt"
+        out_fn = out_dir_name + fn[len(in_dir_name)] + "_out.txt"
         output.output(out_fn, semaphores, inter_start)
