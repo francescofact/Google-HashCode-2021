@@ -3,14 +3,14 @@
 
 ## Team
 
-- @francescofact (myself)
-- @giacomofrigo
-- @AlexPasqua
+- [Francesco Fattori](https://github.com/francescofact)
+- [Giacomo Frigo](https://github.com/giacomofrigo)
+- [Alex Pasquali](https://github.com/AlexPasqua)
 
-Hub: Superheros Valley
+Hub: [Superheros Valley](https://superheroesvalley.fun/)
 
 ## Scoreboard Position
-- Third in our Hub
+- #3 in our Hub
 - #130 in Italy
 - #2819 in the world
 
